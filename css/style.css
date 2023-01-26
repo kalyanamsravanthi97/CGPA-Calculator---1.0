@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E8EDDF;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #242423;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+header .title, header .logo {
+  color: #F5CB5C;
+  line-height: 50px;
+}
+
+.container {
+  width: 35%;
+  height: auto;
+  background-color: #CFDBD5;
+  margin: 0px auto 40px;
+  padding: 20px 0px;
+  border-radius: 15px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub {
+  color: #242423;
+  margin-bottom: 10px;
+}
+
+label {
+  color :#333533;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group .form {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group .form input {
+  outline: none;
+  width: 70%;
+  padding: 2px 5px;
+}
+
+.controls {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  width: 30%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #F5CB5C;
+  color: #242423;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #333533;
+}
+
+.display {
+  width: 80%;
+  min-height: 80px;
+  background-color: #F5CB5C;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #242423;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 1px solid #333533;
+  padding: 10px;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #333533;
+  color: #E8EDDF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 20px 0px;
+}
+
+footer .company {
+  color: #F5CB5C;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  footer {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer .company {
+    display: block;
+  } 
+}
